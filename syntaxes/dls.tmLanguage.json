@@ -1,0 +1,35 @@
+{
+  "scopeName": "source.dls",
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#strings" },
+    { "include": "#numbers" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.dls",
+          "match": "\\b(object|id|transform|children|texts|ints|groups|ranges|vectors|vectors4|bools|colors|floats|transforms|enums)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.dls",
+          "begin": "\"",
+          "end": "\""
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.dls",
+          "match": "\\b[0-9]+\\b"
+        }
+      ]
+    }
+  }
+}
